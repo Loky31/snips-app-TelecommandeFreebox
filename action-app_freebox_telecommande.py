@@ -1,8 +1,6 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 
-import gevent.monkey; gevent.monkey.patch_thread()
-import threading
 import requests
 import time
 from snipsTools import SnipsConfigParser
