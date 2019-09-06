@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 
 import requests
@@ -40,7 +40,7 @@ class TelecommandeFreebox(object):
     def askFreeboxCommand_callback(self, hermes, intent_message):
         # terminate the session first if not continue
 
-        print "Lancement de l'application Telecommandereebox"
+        print ("Lancement de l'application Telecommandereebox")
         hermes.publish_end_session(intent_message.session_id, "")
 
         commandeFreebox = None
